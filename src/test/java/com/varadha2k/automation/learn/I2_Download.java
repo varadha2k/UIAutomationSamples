@@ -49,7 +49,7 @@ public class I2_Download {
 		// Chrome
 		System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
 		ChromeOptions options = new ChromeOptions();
-		Map<String, Object> prefs = new HashMap<>();
+		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_settings.popups", 0);
 		prefs.put("download.default_directory", folder.getAbsolutePath());
 		options.setExperimentalOption("prefs", prefs);
